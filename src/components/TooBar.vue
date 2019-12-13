@@ -1,17 +1,24 @@
 <template>
-	<div>
-	<router-link to="/news">News</router-link>
-	<router-link to="/ask">Ask</router-link>
+	<div class="header">
+	<router-link to="/news">News</router-link> | 
+	<router-link to="/ask">Ask</router-link> | 
 	<router-link to="/jobs">jobs</router-link>
 	</div>
 </template>
 
-<script>
-export default {
 
+
+<style scoped>
+.header {
+	color: white;
+	display: flex;
+	background-color: #42b883;
+	padding: 8px;
 }
-</script>
-
-<style>
-
+.header a:active, .header a:hover {
+	color: #35495e;
+}
+.header a {
+	color: white;
+}
 </style>
