@@ -9,7 +9,8 @@ import UserView from '../views/UserView.vue';
 Vue.use(VueRouter);
 
 export const router = new VueRouter({
-	mode: 'history',
+	mode: 'history', 
+	// 주소줄의 해시값(#)을 제거해줌
 	routes : [
 		{
 			path : '/',
